@@ -1,0 +1,348 @@
+CRITICAL - 2022-07-09 12:12:06 --> The framework needs the following extension(s) installed and loaded: intl.
+#0 C:\xampp\htdocs\UASpraktikumPW\ci4\system\CodeIgniter.php(219): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 C:\xampp\htdocs\UASpraktikumPW\ci4\system\CodeIgniter.php(177): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 C:\xampp\htdocs\UASpraktikumPW\ci4\system\bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#3 C:\xampp\htdocs\UASpraktikumPW\ci4\spark(45): require('C:\\xampp\\htdocs...')
+#4 {main}
+ERROR - 2022-07-09 05:18:36 --> Unknown column 'warga.warga_id' in 'on clause'
+CRITICAL - 2022-07-09 05:18:36 --> Unknown column 'warga.warga_id' in 'on clause'
+#0 C:\xampp\htdocs\UASpraktikumPW\ci4\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\UASpraktikumPW\ci4\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\UASpraktikumPW\ci4\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\UASpraktikumPW\ci4\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\UASpraktikumPW\ci4\app\Models\LaporanModel.php(11): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\UASpraktikumPW\ci4\app\Controllers\Laporan.php(12): App\Models\LaporanModel->getLaporan()
+#6 C:\xampp\htdocs\UASpraktikumPW\ci4\system\CodeIgniter.php(832): App\Controllers\Laporan->index()
+#7 C:\xampp\htdocs\UASpraktikumPW\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+#8 C:\xampp\htdocs\UASpraktikumPW\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\UASpraktikumPW\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\UASpraktikumPW\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+ERROR - 2022-07-09 06:20:06 --> Unknown column 'warga.warga_id' in 'on clause'
+CRITICAL - 2022-07-09 06:20:06 --> Unknown column 'warga.warga_id' in 'on clause'
+#0 C:\xampp\htdocs\UASpraktikumPW\ci4\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\UASpraktikumPW\ci4\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\UASpraktikumPW\ci4\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\UASpraktikumPW\ci4\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\UASpraktikumPW\ci4\app\Models\LaporanModel.php(11): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\UASpraktikumPW\ci4\app\Controllers\Laporan.php(12): App\Models\LaporanModel->getLaporan()
+#6 C:\xampp\htdocs\UASpraktikumPW\ci4\system\CodeIgniter.php(832): App\Controllers\Laporan->index()
+#7 C:\xampp\htdocs\UASpraktikumPW\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+#8 C:\xampp\htdocs\UASpraktikumPW\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\UASpraktikumPW\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\UASpraktikumPW\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+ERROR - 2022-07-09 06:26:27 --> Error connecting to the database: Unknown database 'iurankasrt'
+CRITICAL - 2022-07-09 06:26:27 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'iurankasrt'
+#0 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 C:\xampp\htdocs\lab_uas_praktikum\ci4\app\Controllers\Data_Warga.php(13): CodeIgniter\BaseModel->findAll()
+#5 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\CodeIgniter.php(832): App\Controllers\Data_Warga->index()
+#6 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data_Warga))
+#7 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\lab_uas_praktikum\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+ERROR - 2022-07-09 06:26:29 --> Error connecting to the database: Unknown database 'iurankasrt'
+CRITICAL - 2022-07-09 06:26:29 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'iurankasrt'
+#0 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 C:\xampp\htdocs\lab_uas_praktikum\ci4\app\Controllers\Data_Warga.php(13): CodeIgniter\BaseModel->findAll()
+#5 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\CodeIgniter.php(832): App\Controllers\Data_Warga->index()
+#6 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data_Warga))
+#7 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\lab_uas_praktikum\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+ERROR - 2022-07-09 06:29:50 --> Table 'database_kas_rt.user' doesn't exist
+CRITICAL - 2022-07-09 06:29:50 --> Table 'database_kas_rt.user' doesn't exist
+#0 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\lab_uas_praktikum\ci4\app\Controllers\User.php(29): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\CodeIgniter.php(832): App\Controllers\User->login()
+#8 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#9 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\lab_uas_praktikum\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+ERROR - 2022-07-09 06:32:54 --> Unknown column 'warga.warga_id' in 'on clause'
+CRITICAL - 2022-07-09 06:32:54 --> Unknown column 'warga.warga_id' in 'on clause'
+#0 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\lab_uas_praktikum\ci4\app\Models\LaporanModel.php(11): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\lab_uas_praktikum\ci4\app\Controllers\Laporan.php(12): App\Models\LaporanModel->getLaporan()
+#6 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\CodeIgniter.php(832): App\Controllers\Laporan->index()
+#7 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+#8 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\lab_uas_praktikum\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+ERROR - 2022-07-09 06:55:54 --> Table 'database_kas_rt.user' doesn't exist
+CRITICAL - 2022-07-09 06:55:54 --> Table 'database_kas_rt.user' doesn't exist
+#0 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\lab_uas_praktikum\ci4\app\Controllers\User.php(29): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\CodeIgniter.php(832): App\Controllers\User->login()
+#8 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#9 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\lab_uas_praktikum\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+ERROR - 2022-07-09 06:59:46 --> Table 'database_kas_rt.user' doesn't exist
+CRITICAL - 2022-07-09 06:59:46 --> Table 'database_kas_rt.user' doesn't exist
+#0 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\lab_uas_praktikum\ci4\app\Controllers\User.php(29): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\CodeIgniter.php(832): App\Controllers\User->login()
+#8 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#9 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\lab_uas_praktikum\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+ERROR - 2022-07-09 07:10:03 --> Table 'database_kas_rt.user' doesn't exist
+CRITICAL - 2022-07-09 07:10:03 --> Table 'database_kas_rt.user' doesn't exist
+#0 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\lab_uas_praktikum\ci4\app\Controllers\User.php(29): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\CodeIgniter.php(832): App\Controllers\User->login()
+#8 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#9 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\lab_uas_praktikum\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+ERROR - 2022-07-09 07:33:51 --> Table 'database_kas_rt.user' doesn't exist
+CRITICAL - 2022-07-09 07:33:51 --> Table 'database_kas_rt.user' doesn't exist
+#0 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\lab_uas_praktikum\ci4\app\Controllers\User.php(29): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\CodeIgniter.php(832): App\Controllers\User->login()
+#8 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#9 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\lab_uas_praktikum\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+ERROR - 2022-07-09 07:34:52 --> Table 'database_kas_rt.user' doesn't exist
+CRITICAL - 2022-07-09 07:34:52 --> Table 'database_kas_rt.user' doesn't exist
+#0 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\lab_uas_praktikum\ci4\app\Controllers\User.php(29): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\CodeIgniter.php(832): App\Controllers\User->login()
+#8 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#9 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\lab_uas_praktikum\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+ERROR - 2022-07-09 07:35:08 --> Table 'database_kas_rt.user' doesn't exist
+CRITICAL - 2022-07-09 07:35:08 --> Table 'database_kas_rt.user' doesn't exist
+#0 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\lab_uas_praktikum\ci4\app\Controllers\User.php(29): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\CodeIgniter.php(832): App\Controllers\User->login()
+#8 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#9 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\lab_uas_praktikum\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2022-07-09 07:36:15 --> Undefined index: Jumlah
+#0 C:\xampp\htdocs\lab_uas_praktikum\ci4\app\Views\iuran\index.php(23): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 23, Array)
+#1 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\Common.php(1089): CodeIgniter\View\View->render('iuran/index', Array, true)
+#4 C:\xampp\htdocs\lab_uas_praktikum\ci4\app\Controllers\iuran.php(14): view('iuran/index', Array)
+#5 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\CodeIgniter.php(832): App\Controllers\iuran->index()
+#6 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\iuran))
+#7 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\lab_uas_praktikum\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-07-09 07:36:16 --> Undefined index: warga_id
+#0 C:\xampp\htdocs\lab_uas_praktikum\ci4\app\Views\rt\index.php(18): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 18, Array)
+#1 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\Common.php(1089): CodeIgniter\View\View->render('rt/index', Array, true)
+#4 C:\xampp\htdocs\lab_uas_praktikum\ci4\app\Controllers\Data_Warga.php(14): view('rt/index', Array)
+#5 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\CodeIgniter.php(832): App\Controllers\Data_Warga->index()
+#6 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data_Warga))
+#7 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\lab_uas_praktikum\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-07-09 07:36:19 --> Undefined index: warga_id
+#0 C:\xampp\htdocs\lab_uas_praktikum\ci4\app\Views\rt\index.php(18): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 18, Array)
+#1 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\Common.php(1089): CodeIgniter\View\View->render('rt/index', Array, true)
+#4 C:\xampp\htdocs\lab_uas_praktikum\ci4\app\Controllers\Data_Warga.php(14): view('rt/index', Array)
+#5 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\CodeIgniter.php(832): App\Controllers\Data_Warga->index()
+#6 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data_Warga))
+#7 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\lab_uas_praktikum\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-07-09 07:39:27 --> Undefined index: warga_id
+#0 C:\xampp\htdocs\lab_uas_praktikum\ci4\app\Views\rt\index.php(18): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 18, Array)
+#1 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\Common.php(1089): CodeIgniter\View\View->render('rt/index', Array, true)
+#4 C:\xampp\htdocs\lab_uas_praktikum\ci4\app\Controllers\Data_Warga.php(14): view('rt/index', Array)
+#5 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\CodeIgniter.php(832): App\Controllers\Data_Warga->index()
+#6 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data_Warga))
+#7 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\lab_uas_praktikum\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-07-09 07:39:33 --> Undefined index: warga_id
+#0 C:\xampp\htdocs\lab_uas_praktikum\ci4\app\Views\rt\index.php(18): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 18, Array)
+#1 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\Common.php(1089): CodeIgniter\View\View->render('rt/index', Array, true)
+#4 C:\xampp\htdocs\lab_uas_praktikum\ci4\app\Controllers\Data_Warga.php(14): view('rt/index', Array)
+#5 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\CodeIgniter.php(832): App\Controllers\Data_Warga->index()
+#6 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data_Warga))
+#7 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\lab_uas_praktikum\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-07-09 07:40:30 --> Undefined index: warga_id
+#0 C:\xampp\htdocs\lab_uas_praktikum\ci4\app\Views\rt\index.php(18): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 18, Array)
+#1 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\Common.php(1089): CodeIgniter\View\View->render('rt/index', Array, true)
+#4 C:\xampp\htdocs\lab_uas_praktikum\ci4\app\Controllers\Data_Warga.php(14): view('rt/index', Array)
+#5 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\CodeIgniter.php(832): App\Controllers\Data_Warga->index()
+#6 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data_Warga))
+#7 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\lab_uas_praktikum\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-07-09 07:43:48 --> Undefined index: Kelamin
+#0 C:\xampp\htdocs\lab_uas_praktikum\ci4\app\Views\rt\index.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 22, Array)
+#1 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\Common.php(1089): CodeIgniter\View\View->render('rt/index', Array, true)
+#4 C:\xampp\htdocs\lab_uas_praktikum\ci4\app\Controllers\Data_Warga.php(14): view('rt/index', Array)
+#5 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\CodeIgniter.php(832): App\Controllers\Data_Warga->index()
+#6 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data_Warga))
+#7 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\lab_uas_praktikum\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-07-09 07:44:47 --> Undefined index: Jumlah
+#0 C:\xampp\htdocs\lab_uas_praktikum\ci4\app\Views\iuran\index.php(23): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 23, Array)
+#1 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\Common.php(1089): CodeIgniter\View\View->render('iuran/index', Array, true)
+#4 C:\xampp\htdocs\lab_uas_praktikum\ci4\app\Controllers\iuran.php(14): view('iuran/index', Array)
+#5 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\CodeIgniter.php(832): App\Controllers\iuran->index()
+#6 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\iuran))
+#7 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\lab_uas_praktikum\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+ERROR - 2022-07-09 07:45:29 --> Unknown column 'warga.id_warga' in 'on clause'
+CRITICAL - 2022-07-09 07:45:29 --> Unknown column 'warga.id_warga' in 'on clause'
+#0 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\lab_uas_praktikum\ci4\app\Models\LaporanModel.php(11): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\lab_uas_praktikum\ci4\app\Controllers\Laporan.php(12): App\Models\LaporanModel->getLaporan()
+#6 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\CodeIgniter.php(832): App\Controllers\Laporan->index()
+#7 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+#8 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\lab_uas_praktikum\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+ERROR - 2022-07-09 07:47:11 --> Unknown column 'warga.id_warga' in 'on clause'
+CRITICAL - 2022-07-09 07:47:11 --> Unknown column 'warga.id_warga' in 'on clause'
+#0 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\lab_uas_praktikum\ci4\app\Models\LaporanModel.php(11): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\lab_uas_praktikum\ci4\app\Controllers\Laporan.php(12): App\Models\LaporanModel->getLaporan()
+#6 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\CodeIgniter.php(832): App\Controllers\Laporan->index()
+#7 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+#8 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\lab_uas_praktikum\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+ERROR - 2022-07-09 07:51:50 --> Unknown column 'warga.id_warga' in 'on clause'
+CRITICAL - 2022-07-09 07:51:50 --> Unknown column 'warga.id_warga' in 'on clause'
+#0 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\lab_uas_praktikum\ci4\app\Models\LaporanModel.php(11): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\lab_uas_praktikum\ci4\app\Controllers\Laporan.php(12): App\Models\LaporanModel->getLaporan()
+#6 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\CodeIgniter.php(832): App\Controllers\Laporan->index()
+#7 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+#8 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\lab_uas_praktikum\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+ERROR - 2022-07-09 07:52:21 --> Unknown column 'iuran.id.antrean' in 'on clause'
+CRITICAL - 2022-07-09 07:52:21 --> Unknown column 'iuran.id.antrean' in 'on clause'
+#0 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\lab_uas_praktikum\ci4\app\Models\LaporanModel.php(11): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\lab_uas_praktikum\ci4\app\Controllers\Laporan.php(12): App\Models\LaporanModel->getLaporan()
+#6 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\CodeIgniter.php(832): App\Controllers\Laporan->index()
+#7 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+#8 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\lab_uas_praktikum\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+ERROR - 2022-07-09 07:59:42 --> Table 'database_kas_rt.user' doesn't exist
+CRITICAL - 2022-07-09 07:59:42 --> Table 'database_kas_rt.user' doesn't exist
+#0 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\lab_uas_praktikum\ci4\app\Controllers\User.php(29): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\CodeIgniter.php(832): App\Controllers\User->login()
+#8 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#9 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\lab_uas_praktikum\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\lab_uas_praktikum\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#12 {main}
